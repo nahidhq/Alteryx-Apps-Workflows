@@ -1,0 +1,1477 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="1483" height="800" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Adidas 2021 Sales in USA for Data Visualization</Caption>
+          <Style TextColor="#000000" FillColor="#0080ff" BorderColor="#ff8040" Transparency="80" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Adidas 2021 Sales in USA for Data Visualization</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>5</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Adidas US Sales Datasets.xlsx
+Query=`Data Sales Adidas$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Retailer" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="V_String" />
+                <Field name="Retailer ID" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Double" />
+                <Field name="Invoice Date" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Date" />
+                <Field name="Region" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="V_String" />
+                <Field name="State" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="V_String" />
+                <Field name="City" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="V_String" />
+                <Field name="Product" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="V_String" />
+                <Field name="Price per Unit" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Double" />
+                <Field name="Units Sold" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Double" />
+                <Field name="Total Sales" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Double" />
+                <Field name="Operating Profit" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Double" />
+                <Field name="Operating Margin" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="Double" />
+                <Field name="Sales Method" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Adidas sales chart\Adidas US Sales Datasets.xlsx|||`Data Sales Adidas$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="186" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Retailer ID" selected="False" />
+                <SelectField field="City" selected="False" />
+                <SelectField field="Price per Unit" selected="False" />
+                <SelectField field="Units Sold" selected="False" />
+                <SelectField field="Operating Margin" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="270" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Datetimeformat([Invoice Date], '%b %Y')" field="Month &amp; Year of Invoice Date" size="1073741823" type="V_WString" />
+                <FormulaField expression="Datetimeformat([Invoice Date], '%Y')" field="Year" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Month &amp; Year of Invoice Date = Datetimeformat([Invoice Date], '%b %Y')
+Year = Da...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="354" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Invoice Date" selected="False" />
+                <SelectField field="Sales Method" selected="False" />
+                <SelectField field="Month &amp; Year of Invoice Date" selected="True" rename="Invoice Date" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="450" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Retailer" action="GroupBy" rename="Retailer" />
+                <SummarizeField field="Region" action="GroupBy" rename="Region" />
+                <SummarizeField field="Product" action="GroupBy" rename="Product" />
+                <SummarizeField field="Year" action="GroupBy" rename="Year" />
+                <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+                <SummarizeField field="Operating Profit" action="Sum" rename="Sum_Operating Profit" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="534" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Year</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-03-24 18:33:15</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>2021</Operand>
+                  <StartDate>2024-03-24 18:33:15</StartDate>
+                  <EndDate>2024-03-24 18:33:15</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Year] = "2021"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="630" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Region" selected="False" />
+                <SelectField field="Year" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="714" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Retailer" />
+              </GroupFields>
+              <HeaderField field="Product" />
+              <DataField field="Sum_Total Sales" />
+              <Methods>
+                <Method method="Sum" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Retailer" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="Men_s_Apparel" source="CrossTab:Header:Product:Men's Apparel:Sum:" type="Double" />
+                <Field name="Men_s_Athletic_Footwear" source="CrossTab:Header:Product:Men's Athletic Footwear:Sum:" type="Double" />
+                <Field name="Men_s_Street_Footwear" source="CrossTab:Header:Product:Men's Street Footwear:Sum:" type="Double" />
+                <Field name="Women_s_Apparel" source="CrossTab:Header:Product:Women's Apparel:Sum:" type="Double" />
+                <Field name="Women_s_Athletic_Footwear" source="CrossTab:Header:Product:Women's Athletic Footwear:Sum:" type="Double" />
+                <Field name="Women_s_Street_Footwear" source="CrossTab:Header:Product:Women's Street Footwear:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="786" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Men_s_Apparel" selected="True" rename="Men's Apparel" />
+                <SelectField field="Men_s_Athletic_Footwear" selected="True" rename="Men's Athletic Footwear" />
+                <SelectField field="Men_s_Street_Footwear" selected="True" rename="Men's Street Footwear" />
+                <SelectField field="Women_s_Apparel" selected="True" rename="Women's Apparel" />
+                <SelectField field="Women_s_Athletic_Footwear" selected="True" rename="Women's Athletic Footwear" />
+                <SelectField field="Women_s_Street_Footwear" selected="True" rename="Women's Street Footwear" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="870" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Men's Apparel]+[Men's Athletic Footwear]+&#xA;[Men's Street Footwear]+[Women's Apparel]+&#xA;[Women's Athletic Footwear]+[Women's Street Footwear]" field="Total" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total = [Men's Apparel]+[Men's Athletic Footwear]+
+[Men's Street Footwear]+[Wome...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="954" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Total" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="1026" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Men's Apparel" />
+                <Field name="Men's Athletic Footwear" />
+                <Field name="Men's Street Footwear" />
+                <Field name="Women's Apparel" />
+                <Field name="Women's Athletic Footwear" />
+                <Field name="Women's Street Footwear" />
+                <Field name="Total" />
+                <Field name="*Unknown" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>ToString([_CurrentField_], 0, 1)</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="V_WString" size="16" scale="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ToString([_CurrentField_], 0, 1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="1206" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Text</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Men's Apparel" />
+                <Field name="Men's Athletic Footwear" />
+                <Field name="Men's Street Footwear" />
+                <Field name="Women's Apparel" />
+                <Field name="Women's Athletic Footwear" />
+                <Field name="Women's Street Footwear" />
+                <Field name="Total" />
+                <Field name="Retailer" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>'$'+ToString([_CurrentField_], 0, 1)</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="V_WString" size="16" scale="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>'$'+ToString([_CurrentField_], 0, 1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1278" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="Retailer" selected="True" Alignment="Left" />
+                <Field name="Men's Apparel" selected="True" Alignment="Left" />
+                <Field name="Men's Athletic Footwear" selected="True" Alignment="Left" />
+                <Field name="Men's Street Footwear" selected="True" Alignment="Left" />
+                <Field name="Women's Apparel" selected="True" Alignment="Left" />
+                <Field name="Women's Athletic Footwear" selected="True" Alignment="Left" />
+                <Field name="Women's Street Footwear" selected="True" Alignment="Left" />
+                <Field name="Total" selected="True" Alignment="Left" />
+                <Field name="*Unknown" selected="True" Alignment="Right" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="186" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="State" action="GroupBy" rename="State" />
+                <SummarizeField field="Total Sales" action="Sum" rename="Total Sales" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="270" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Total Sales" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="354" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>5</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 5 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToString([Total Sales], 0, 1)" field="Total Sales for Tooltip" size="1073741823" type="V_WString" />
+                <FormulaField expression="'$'+ToString([Total Sales for Tooltip], 0, 1)" field="Total Sales for Tooltip" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales for Tooltip = ToString([Total Sales], 0, 1)
+Total Sales for Tooltip ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="534" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>v</orientation>
+                  <xsrc>State</xsrc>
+                  <ysrc>Total Sales</ysrc>
+                  <name>&lt;br&gt;</name>
+                  <textposition>outside</textposition>
+                  <marker>
+                    <line>
+                      <width>2</width>
+                      <color>rgb(255, 127, 14)</color>
+                    </line>
+                    <color>#1f77b4</color>
+                  </marker>
+                  <textfont>
+                    <size>12</size>
+                  </textfont>
+                  <showlegend>false</showlegend>
+                  <hoverinfo>x+text</hoverinfo>
+                  <constraintext>inside</constraintext>
+                  <textsrc>Total Sales for Tooltip</textsrc>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>&lt;b&gt;Top 5 States by Total Sales&lt;/b&gt;</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                    <color>rgb(255, 127, 14)</color>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>698</width>
+                  <height>850</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-1</range>
+                    <range>5</range>
+                    <autorange>false</autorange>
+                    <title>
+                      <text>&lt;br&gt;</text>
+                    </title>
+                    <tickfont>
+                      <size>12</size>
+                      <family>sans-serif</family>
+                    </tickfont>
+                    <nticks>0</nticks>
+                    <showline>false</showline>
+                    <showgrid>true</showgrid>
+                    <showticklabels>true</showticklabels>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>-679217</range>
+                    <range>66930298</range>
+                    <autorange>false</autorange>
+                    <title>
+                      <text>&lt;br&gt;</text>
+                    </title>
+                    <showline>false</showline>
+                    <showticklabels>false</showticklabels>
+                    <showgrid>true</showgrid>
+                    <tickfont>
+                      <family>sans-serif</family>
+                    </tickfont>
+                    <type>linear</type>
+                  </yaxis>
+                  <barnorm>0</barnorm>
+                  <barmode>overlay</barmode>
+                  <margin>
+                    <pad>0</pad>
+                    <t>55</t>
+                    <b>43</b>
+                    <l>79</l>
+                    <r>79</r>
+                  </margin>
+                  <ppi>72</ppi>
+                  <plot_bgcolor>rgb(255, 255, 255)</plot_bgcolor>
+                  <paper_bgcolor>rgb(255, 255, 255)</paper_bgcolor>
+                  <legend>
+                    <font>
+                      <size>10</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                    <orientation>v</orientation>
+                    <traceorder>normal</traceorder>
+                  </legend>
+                  <bargap>0.19999999999999996</bargap>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="186" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Retailer" action="GroupBy" rename="Retailer" />
+                <SummarizeField field="Total Sales" action="Sum" rename="Total Sales" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="269" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Total Sales" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="354" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>5</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 5 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToString([Total Sales], 0, 1)" field="Total Sales for Tooltip" size="1073741823" type="V_WString" />
+                <FormulaField expression="'$'+ToString([Total Sales for Tooltip], 0, 1)" field="Total Sales for Tooltip" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales for Tooltip = ToString([Total Sales], 0, 1)
+Total Sales for Tooltip ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="534" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <type>pie</type>
+                  <mode>markers</mode>
+                  <valuessrc>Total Sales</valuessrc>
+                  <labelssrc>Retailer</labelssrc>
+                  <name>&lt;br&gt;</name>
+                  <marker>
+                    <line>
+                      <width>2</width>
+                      <color>rgb(214, 39, 40)</color>
+                    </line>
+                  </marker>
+                  <textinfo>label+value+percent</textinfo>
+                  <sort>true</sort>
+                  <showlegend>false</showlegend>
+                  <hoverinfo>percent+label+value</hoverinfo>
+                  <hole>0.5</hole>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>&lt;b&gt;Total Sales by Retailers&lt;/b&gt;</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                    <color>rgb(255, 127, 14)</color>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>698</width>
+                  <height>850</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-1</range>
+                    <range>6</range>
+                    <autorange>true</autorange>
+                  </xaxis>
+                  <yaxis>
+                    <range>-1</range>
+                    <range>4</range>
+                    <autorange>true</autorange>
+                  </yaxis>
+                  <extendpiecolors>true</extendpiecolors>
+                  <margin>
+                    <pad>0</pad>
+                    <t>101</t>
+                    <b>79</b>
+                    <l>79</l>
+                    <r>79</r>
+                  </margin>
+                  <ppi>72</ppi>
+                  <paper_bgcolor>rgb(255, 255, 255)</paper_bgcolor>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                    <orientation>v</orientation>
+                    <traceorder>normal</traceorder>
+                    <bordercolor>rgb(255, 255, 255)</bordercolor>
+                  </legend>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="185" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Product" action="GroupBy" rename="Product" />
+                <SummarizeField field="Sum_Total Sales" action="Sum" rename="Total Sales" />
+                <SummarizeField field="Sum_Operating Profit" action="Sum" rename="Total Operating Profit" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="269" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Total Sales" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="353" y="643" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>5</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 5 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="643" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToString([Total Sales], 0, 1)" field="Total Sales for Tooltip" size="1073741823" type="V_WString" />
+                <FormulaField expression="'$'+ToString([Total Sales for Tooltip], 0, 1)" field="Total Sales for Tooltip" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales for Tooltip = ToString([Total Sales], 0, 1)
+Total Sales for Tooltip ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="534" y="643" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>h</orientation>
+                  <ysrc>Product</ysrc>
+                  <xsrc>Total Sales</xsrc>
+                  <name>&lt;br&gt;</name>
+                  <textposition>inside</textposition>
+                  <marker>
+                    <line>
+                      <width>2</width>
+                      <color>rgb(255, 127, 14)</color>
+                    </line>
+                  </marker>
+                  <textsrc>Total Sales for Tooltip</textsrc>
+                  <textfont>
+                    <size>12</size>
+                  </textfont>
+                  <showlegend>false</showlegend>
+                  <hoverinfo>y+text</hoverinfo>
+                  <constraintext>inside</constraintext>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>&lt;b&gt;Total Sales by Products&lt;/b&gt;</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                    <color>rgb(255, 127, 14)</color>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>696</width>
+                  <height>850</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-21933746</range>
+                    <range>221001719</range>
+                    <autorange>false</autorange>
+                    <title>
+                      <text>&lt;br&gt;</text>
+                    </title>
+                    <type>linear</type>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                    <showline>false</showline>
+                    <showgrid>true</showgrid>
+                    <showticklabels>true</showticklabels>
+                    <separatethousands>false</separatethousands>
+                    <tickmode>auto</tickmode>
+                    <tick0>1</tick0>
+                    <dtick>1</dtick>
+                  </xaxis>
+                  <yaxis>
+                    <range>-0.86965849082971447</range>
+                    <range>4.6561960995485236</range>
+                    <autorange>false</autorange>
+                    <title>
+                      <text>&lt;br&gt;</text>
+                    </title>
+                    <type>category</type>
+                    <showline>false</showline>
+                    <showgrid>true</showgrid>
+                  </yaxis>
+                  <barmode>overlay</barmode>
+                  <margin>
+                    <pad>0</pad>
+                    <t>101</t>
+                    <b>79</b>
+                    <l>139</l>
+                    <r>81</r>
+                  </margin>
+                  <plot_bgcolor>rgb(255, 255, 255)</plot_bgcolor>
+                  <paper_bgcolor>rgb(255, 255, 255)</paper_bgcolor>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                  <ppi>72</ppi>
+                  <bargap>0.4</bargap>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="1374" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <HeaderMode value="True" />
+              <HeaderField>Table</HeaderField>
+              <Position>Above</Position>
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fcharset0 Times New Roman;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\qc\cf1\b\f0\fs28 Sales by Retailers & Products\b0\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" FontName="Times New Roman" FontSize="14" Justify="Center" ForeColor="#ffffff" BackColor="#000088" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Sales by Retailers &amp; Products</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="630" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <HeaderMode value="True" />
+              <HeaderField>Chart</HeaderField>
+              <Position>Above</Position>
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fcharset0 Times New Roman;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\qc\cf1\b\f0\fs28 Top 5 States by Total Sales\b0\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" FontName="Times New Roman" FontSize="14" Justify="Center" ForeColor="#ffffff" BackColor="#000088" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Top 5 States by Total Sales</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="630" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <HeaderMode value="True" />
+              <HeaderField>Chart</HeaderField>
+              <Position>Above</Position>
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fcharset0 Times New Roman;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\qc\cf1\b\f0\fs28 Total Sales by Retailers\b0\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" FontName="Times New Roman" FontSize="14" Justify="Center" ForeColor="#ffffff" BackColor="#000088" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales by Retailers</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="630" y="643" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <HeaderMode value="True" />
+              <HeaderField>Chart</HeaderField>
+              <Position>Above</Position>
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fcharset0 Times New Roman;}}
+{\colortbl ;\red255\green255\blue255;}
+\viewkind4\uc1\pard\qc\cf1\b\f0\fs28 Total Sales by Products\b0\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" FontName="Times New Roman" FontSize="14" Justify="Center" ForeColor="#ffffff" BackColor="#000088" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Total Sales by Products</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerImage.PortfolioComposerImage">
+            <Position x="714" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ImageMode>Static</ImageMode>
+              <EncodedImage>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
+/AfJnGCySx2nMAAAAABJRU5ErkJggg==</EncodedImage>
+              <Thumbnail>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</Thumbnail>
+              <StaticImage Format="PNG" Width="162" Height="148" olen="2416" enclen="3308" />
+              <ImageStyle FixedWidth="true" ImageWidth="150" ShowBorder="false" BorderWidth="1" BorderColor="#000000" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerImagePlugin" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="786" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Chart Title</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\froman\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;\red170\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs52 Adidas 2021 Sales Figures in USA\cf2\b0\f1\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" FontName="Times New Roman" FontSize="26" Justify="Left" ForeColor="#000088" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Adidas 2021 Sales Figures in U...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="870" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>H</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Image" selected="True" Alignment="Center" />
+                <Field name="Chart Title" selected="True" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+            <Position x="1206" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinByRecPos value="True" />
+              <OutputJoinOnly value="False" />
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Input_#3_Chart" selected="True" rename="Input_#3_Chart" />
+                    <SelectField field="Input_#4_Chart" selected="True" rename="Input_#4_Chart" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1278" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRecord</GroupingMode>
+              <PreserveSourceFields value="False" />
+              <Orientation>V</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="true" Color="#000088" Width="4" />
+              <SeparatorStyle Enabled="true" Color="#000088" Width="2" />
+              <Padding>10</Padding>
+              <LayoutFields orderChanged="True">
+                <Field name="Layout" selected="True" Color="#d7d7d7" Width="" Alignment="Center" />
+                <Field name="Table" selected="True" Alignment="Center" />
+                <Field name="Input_#3_Chart" selected="True" Alignment="Center" />
+                <Field name="Input_#4_Chart" selected="True" Alignment="Center" />
+                <Field name="Chart" selected="True" Width="" Alignment="Center" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+            <Position x="1374" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileType>html</TempFileType>
+              <BatchMode value="False" />
+              <DataField>Layout</DataField>
+              <Separator>Continuous</Separator>
+              <EmbedDependencies value="True" />
+              <ShowHeader value="False" />
+              <ShowFooter value="False" />
+              <PdfCefOutput value="False" />
+              <PortraitMode value="True" />
+              <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+              <DefaultStyles>
+                <Style Name="TextStyle" FontName="Verdana" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+              </DefaultStyles>
+              <PNGResolution>1</PNGResolution>
+              <PNGLargerAction>squeeze</PNGLargerAction>
+              <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+              <PNGTransparentBG value="False" />
+              <PNGBackColor value="#ffffff" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Alteryx Data Visualization for 2021 Adidas Sales Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="51f07048-3520-4978-a0ed-f7a64306c7d1" />
+      <Telemetry>
+        <PreviousWorkflowId value="7e5c0836-cf72-4b7d-be0d-8c98987ef2e3" />
+        <OriginWorkflowId value="37574a7f-309d-4790-a44c-605f53c2e962" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
