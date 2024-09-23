@@ -1,0 +1,1373 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1">
+  <Nodes>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="69" y="141" width="1443" height="543" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Challenge 91 Solution</Caption>
+          <Style TextColor="#ffffff" FillColor="#008080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Challenge 91 Solution</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="318" y="293" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2012" field="Year" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Year = 2012
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Date" />
+                <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="String" />
+                <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Int32" />
+                <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Double" />
+                <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="String" />
+                <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="String" />
+                <Field name="Shape_len" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Double" />
+                <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="SpatialObj" />
+                <Field name="Year" source="Formula: 2012" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="318" y="425" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2013" field="Year" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Year = 2013
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Date" />
+                <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Int32" />
+                <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Double" />
+                <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                <Field name="WEEDLISTCA" size="1" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                <Field name="Shape_len" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Double" />
+                <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="SpatialObj" />
+                <Field name="Year" source="Formula: 2013" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="318" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2014" field="Year" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Year = 2014
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Date" />
+                <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Int32" />
+                <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Double" />
+                <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                <Field name="WEEDLISTCA" size="50" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="Shape_len" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Double" />
+                <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="SpatialObj" />
+                <Field name="Year" source="Formula: 2014" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="461" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="COLLECTOR" size="30" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DATE_" source="File: (Multiple Sources)" type="Date" />
+                <Field name="ROUTE" size="4" source="File: (Multiple Sources)" type="String" />
+                <Field name="ROW_WIDTH" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="PRIMARY_WD" size="30" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PW_COVER" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PW_CONTAIN" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SECOND_WD" size="30" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SW_COVER" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SW_CONTAIN" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COMMENTS" size="100" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="BUFF_DIST" source="File: (Multiple Sources)" type="Double" />
+                <Field name="DATAFILE" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ZONE_" size="11" source="File: (Multiple Sources)" type="String" />
+                <Field name="ROAD_TYPE" size="2" source="File: (Multiple Sources)" type="String" />
+                <Field name="Shape_len" source="File: (Multiple Sources)" type="Double" />
+                <Field name="SpatialObj" size="2147483647" source="File: (Multiple Sources)" type="SpatialObj" />
+                <Field name="Year" source="Formula: (Multiple Sources)" type="Double" />
+                <Field name="WEEDLISTCA" size="50" source="File: (Multiple Sources)" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="562" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IIF(PW_Contain=&quot;No&quot;,0,Switch([PW_COVER],0,&quot;0-20%&quot;,.1,&quot;20-40%&quot;,.3,&quot;40-60%&quot;,.5,&quot;60-80%&quot;,.7,&quot;80-100%&quot;,.9))" field="Weed Percent" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Weed Percent = IIF(PW_Contain="No",0,Switch([PW_COVER],0,"0-20%",.1,"20-40%",.3,...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="COLLECTOR" size="30" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DATE_" source="File: (Multiple Sources)" type="Date" />
+                <Field name="ROUTE" size="4" source="File: (Multiple Sources)" type="String" />
+                <Field name="ROW_WIDTH" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="PRIMARY_WD" size="30" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PW_COVER" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PW_CONTAIN" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SECOND_WD" size="30" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SW_COVER" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SW_CONTAIN" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COMMENTS" size="100" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="BUFF_DIST" source="File: (Multiple Sources)" type="Double" />
+                <Field name="DATAFILE" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ZONE_" size="11" source="File: (Multiple Sources)" type="String" />
+                <Field name="ROAD_TYPE" size="2" source="File: (Multiple Sources)" type="String" />
+                <Field name="Shape_len" source="File: (Multiple Sources)" type="Double" />
+                <Field name="SpatialObj" size="2147483647" source="File: (Multiple Sources)" type="SpatialObj" />
+                <Field name="Year" source="Formula: (Multiple Sources)" type="Double" />
+                <Field name="WEEDLISTCA" size="50" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="Weed Percent" source="Formula: IIF(PW_Contain=&quot;No&quot;,0,Switch([PW_COVER],0,&quot;0-20%&quot;,.1,&quot;20-40%&quot;,.3,&quot;40-60%&quot;,.5,&quot;60-80%&quot;,.7,&quot;80-100%&quot;,.9))" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings>
+            <Position x="642" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Value">Weed Percent</Value>
+              <Value name="Weight">Shape_len</Value>
+              <Value name="OutputFieldName">WeightedAverage</Value>
+              <Value name="GroupFields">ROUTE" action="GroupBy"/&gt;&lt;SummarizeField field="PRIMARY_WD" action="GroupBy"/&gt;&lt;SummarizeField field="Year</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="Summarize: GroupBy - ROUTE" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="Summarize: GroupBy - PRIMARY_WD" type="V_String" />
+                <Field name="Year" source="Summarize: GroupBy - Year" type="Double" />
+                <Field name="WeightedAverage" source="Formula: [__Sum___WeightedValue]/[__Sum_Weight]" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="WeightedAvg.yxmc" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="966" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[ROUTE]=[#1]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[ROUTE]=[#1]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="2012" source="CrossTab:Header:Year:2012:Sum:" type="Double" />
+                <Field name="2013" source="CrossTab:Header:Year:2013:Sum:" type="Double" />
+                <Field name="2014" source="CrossTab:Header:Year:2014:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="ROUTE" order="Asc" />
+                <Field field="PRIMARY_WD" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="2012" source="CrossTab:Header:Year:2012:Sum:" type="Double" />
+                <Field name="2013" source="CrossTab:Header:Year:2013:Sum:" type="Double" />
+                <Field name="2014" source="CrossTab:Header:Year:2014:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="ROUTE" order="Asc" />
+                <Field field="PRIMARY_WD" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="842" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="ROUTE" />
+                <Field field="PRIMARY_WD" />
+              </GroupFields>
+              <HeaderField field="Year" />
+              <DataField field="WeightedAverage" />
+              <Methods>
+                <Method method="Sum" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="2012" source="CrossTab:Header:Year:2012:Sum:" type="Double" />
+                <Field name="2013" source="CrossTab:Header:Year:2013:Sum:" type="Double" />
+                <Field name="2014" source="CrossTab:Header:Year:2014:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="ROUTE" order="Asc" />
+                <Field field="PRIMARY_WD" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="221" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Shape_STLe" selected="True" rename="Shape_len" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Date" />
+                <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Int32" />
+                <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Double" />
+                <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                <Field name="WEEDLISTCA" size="50" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                <Field name="Shape_len" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Double" />
+                <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="974" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[PRIMARY_WD]=[#1]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[PRIMARY_WD]=[#1]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="2012" source="CrossTab:Header:Year:2012:Sum:" type="Double" />
+                <Field name="2013" source="CrossTab:Header:Year:2013:Sum:" type="Double" />
+                <Field name="2014" source="CrossTab:Header:Year:2014:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="ROUTE" order="Asc" />
+                <Field field="PRIMARY_WD" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="2012" source="CrossTab:Header:Year:2012:Sum:" type="Double" />
+                <Field name="2013" source="CrossTab:Header:Year:2013:Sum:" type="Double" />
+                <Field name="2014" source="CrossTab:Header:Year:2014:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="ROUTE" order="Asc" />
+                <Field field="PRIMARY_WD" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="1098" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="2012" />
+                <Field name="2013" />
+                <Field name="2014" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>IIF([_CurrentField_]&gt;0,tostring([_CurrentField_]*100,0)+"%","")</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="V_String" size="8" scale="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IIF([_CurrentField_]&gt;0,tostring([_CurrentField_]*100,0)+"%","")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="2012" size="8" source="Formula: IIF([_CurrentField_]&gt;0,tostring([_CurrentField_]*100,0)+&quot;%&quot;,&quot;&quot;)" type="V_String" />
+                <Field name="2013" size="8" source="Formula: IIF([_CurrentField_]&gt;0,tostring([_CurrentField_]*100,0)+&quot;%&quot;,&quot;&quot;)" type="V_String" />
+                <Field name="2014" size="8" source="Formula: IIF([_CurrentField_]&gt;0,tostring([_CurrentField_]*100,0)+&quot;%&quot;,&quot;&quot;)" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="ROUTE" order="Asc" />
+                <Field field="PRIMARY_WD" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="742" y="550" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[WeightedAverage]&gt;0</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[WeightedAverage]&gt;0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="Summarize: GroupBy - ROUTE" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="Summarize: GroupBy - PRIMARY_WD" type="V_String" />
+                <Field name="Year" source="Summarize: GroupBy - Year" type="Double" />
+                <Field name="WeightedAverage" source="Formula: [__Sum___WeightedValue]/[__Sum_Weight]" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="ROUTE" size="4" source="Summarize: GroupBy - ROUTE" type="String" />
+                <Field name="PRIMARY_WD" size="30" source="Summarize: GroupBy - PRIMARY_WD" type="V_String" />
+                <Field name="Year" source="Summarize: GroupBy - Year" type="Double" />
+                <Field name="WeightedAverage" source="Formula: [__Sum___WeightedValue]/[__Sum_Weight]" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="80" y="260" width="121" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Input 1</Caption>
+              <Style TextColor="#ffffff" FillColor="#c0c0c0" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input 1</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="32">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="90" y="294" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="12">_externals\1\NOXIOUS_WEEDS_2012.shp</File>
+                  <FormatSpecificOptions>
+                    <Projection />
+                    <AllStrings>False</AllStrings>
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>NOXIOUS_WEEDS_2012.shp</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Date" />
+                    <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="String" />
+                    <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Int32" />
+                    <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Double" />
+                    <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="V_String" />
+                    <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="String" />
+                    <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="String" />
+                    <Field name="Shape_len" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="Double" />
+                    <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2012.shp" type="SpatialObj" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1184" y="572" width="319" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Output 2</Caption>
+              <Style TextColor="#ffffff" FillColor="#c0c0c0" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output 2</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="70">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1434" y="606" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\QURAIS~1\AppData\Local\Temp\Alteryx\Engine_18068_b72452e24e714108b7c8ed9c39ac7a0c_\Engine_35804_362d92c073474c40b2418fe5585b822e_.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name>Weeds_out</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="69">
+              <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+                <Position x="1194" y="606" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TableMode>Basic</TableMode>
+                  <GroupingFields orderChanged="False" />
+                  <Width />
+                  <ShowHeader value="True" />
+                  <ShowBarGraph value="False" />
+                  <TableFields orderChanged="False">
+                    <Field name="ROUTE" selected="True" Alignment="Left" />
+                    <Field name="2012" selected="True" Alignment="Left" />
+                    <Field name="2013" selected="True" Alignment="Left" />
+                    <Field name="2014" selected="True" Alignment="Left" />
+                    <Field name="*Unknown" selected="True" Alignment="Right" />
+                    <Field name="PRIMARY_WD" selected="False" />
+                  </TableFields>
+                  <TableStyles>
+                    <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                    <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                    <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                    <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+                  </TableStyles>
+                  <StyleRules />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+                  </RecordInfo>
+                  <SortInfo>
+                    <Field field="ROUTE" order="Asc" />
+                    <Field field="PRIMARY_WD" order="Asc" />
+                  </SortInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+            </Node>
+            <Node ToolID="76">
+              <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+                <Position x="1350" y="606" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <GroupingMode>PerRecord</GroupingMode>
+                  <PreserveSourceFields value="False" />
+                  <Orientation>V</Orientation>
+                  <Separator>Continuous</Separator>
+                  <Width />
+                  <Height />
+                  <BorderStyle Enabled="false" Color="#000000" Width="2" />
+                  <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+                  <Padding>0</Padding>
+                  <LayoutFields orderChanged="True">
+                    <Field name="Text" selected="True" Width="" Alignment="Center" />
+                    <Field name="Table" selected="True" Alignment="Center" />
+                  </LayoutFields>
+                  <MergeIntoTable value="False" />
+                  <SectionNameForGroup />
+                  <SectionNameForAllRecords />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Layout" size="1073741823" source="Report:Layout:" type="V_WString" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+            </Node>
+            <Node ToolID="78">
+              <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+                <Position x="1266" y="606" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Images />
+                  <Output>Text</Output>
+                  <HeaderMode value="False" />
+                  <RawMode value="False" />
+                  <ValidatePCXML value="True" />
+                  <Message />
+                  <RichTextMode value="True" />
+                  <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\fs24 Coverage of %Question.Weeds%\par
+}
+]]></RichTextString>
+                  <Styles>
+                    <Style Name="TextStyle" />
+                  </Styles>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Coverage of %Question.Weeds%</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+                    <Field name="Text" size="1073741823" source="Report:Text:" type="V_WString" />
+                  </RecordInfo>
+                  <SortInfo>
+                    <Field field="ROUTE" order="Asc" />
+                    <Field field="PRIMARY_WD" order="Asc" />
+                  </SortInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="596" y="175" width="223" height="283" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>App Questions</Caption>
+              <Style TextColor="#ffffff" FillColor="#c0c0c0" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>App Questions</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="52">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="606" y="294" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>Road</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="62">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="750" y="294" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>Weeds</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+              </Properties>
+            </Node>
+            <Node ToolID="64">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.RadioButtonGroup.RadioButtonGroup">
+                <Position x="606" y="209" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="65">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.RadioButtonGroup.RadioButtonGroup">
+                <Position x="750" y="210" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="74">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="750" y="390" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="75">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="606" y="390" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1184" y="404" width="151" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Output 1</Caption>
+              <Style TextColor="#314c4a" FillColor="#c0c0c0" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output 1</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="56">
+              <GuiSettings Plugin="AlteryxReportChartGui.AlteryxReportChartGui">
+                <Position x="1194" y="438" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ChartType>Column</ChartType>
+                  <GroupingFields orderChanged="False" />
+                  <LabelField>PRIMARY_WD</LabelField>
+                  <GeneralStyles ThreeDInterior="true" GradientColoring="false" ChartSizeW="576" ChartSizeH="576" Resolution="3x (288 dpi)" ChartTitle="Weeds on Route %Question.Road%" ChartTitleSize="18" ChartSubTitle="" ChartSubTitleSize="12" ChartPrimaryFont="Microsoft Sans Serif" />
+                  <TitleStyles ChangeTitleFont="false" ChartTitleFont="Microsoft Sans Serif" ChartTitleSize="14" ChartTitleColor="#000000" ChartTitleAlignment="Center" ChangeSubTitleFont="false" ChartSubTitleFont="Microsoft Sans Serif" ChartSubTitleSize="12" ChartSubTitleColor="#000000" SubTitleAlignment="Center" ChangeLegendTextFont="false" LegendTextFont="Microsoft Sans Serif" LegendTextSize="12" LegendTextColor="#000000" />
+                  <Styles UseChartBorder="false" ChartBorderWidth="2" ChartBorderColor="#000000" UseAreaBorder="false" AreaBorderWidth="2" AreaBorderColor="#000000" ChartBGColor="#e8e8e8" ChartAreaBGColor="#e7e7e7" ChartInteriorBGColor="#e7e7e7" />
+                  <ChartTypeStyles ShowChartLegend="true" LegendSeparateImage="false" LegendPosition="Bottom" LegendAlignment="Center" UseLegendBorder="false" LegendBorderWidth="2" LegendBorderColor="#000000" TransposeData="Record" ShowDataPointText="false" DataPointFontFaceName="Arial" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" />
+                  <YAxis YAxisLabelFont="Arial" YAxisLabelSize="8" YAxisLabelColor="#000000" YAxisTitle="" YAxisTitleFont="Arial" YAxisTitleSize="10" YAxisTitleColor="#000000" YAxisShowGrid="true" YPrefix="" YPostfix="" YAxisOverrideOrigin="false" YAxisCustomOrigin="0" YAxisOverrideIncrement="false" YAxisIncrement="100" YAxisOverrideBaseline="false" YAxisBaseline="0" YAxisOverrideTopline="false" YAxisTopline="1000" UseYAxisHiliteline="false" YAxisHiliteValue="0" YAxisHiliteColor="#000000" YAxisOverrideDecimalPlaces="false" YAxisNumDecimalPlaces="0" />
+                  <OAxis UseOpposedAxis="false" OAxisLabelFont="Arial" OAxisLabelSize="8" OAxisLabelColor="#000000" OAxisTitle="" OAxisTitleFont="Arial" OAxisTitleSize="10" OAxisTitleColor="#000000" OAxisShowGrid="true" OPrefix="" OPostfix="" OAxisOverrideOrigin="false" OAxisCustomOrigin="0" OAxisOverrideIncrement="false" OAxisIncrement="100" OAxisOverrideBaseline="false" OAxisBaseline="0" OAxisOverrideTopline="false" OAxisTopline="1000" UseOAxisHiliteline="false" OAxisHiliteValue="0" OAxisHiliteColor="#000000" OAxisOverrideDecimalPlaces="false" OAxisNumDecimalPlaces="0" />
+                  <XAxis XAxisLabelFont="Arial" XAxisLabelSize="8" XAxisLabelColor="#000000" XAxisTitle="" XAxisTitleFont="Arial" XAxisTitleSize="10" XAxisTitleColor="#000000" XAxisShowGrid="true" />
+                  <StylesSeries1 SeriesStyleMode="Standard" ShowDataPointText="false" DataPointFontFaceName="Arial" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#b30023" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" PlotOnOpposedAxis="false">
+                    <SeriesFormulas NumFormulas="0" />
+                  </StylesSeries1>
+                  <StylesSeries2 SeriesStyleMode="Standard" ShowDataPointText="false" DataPointFontFaceName="Arial" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#00488c" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" PlotOnOpposedAxis="false">
+                    <SeriesFormulas NumFormulas="0" />
+                  </StylesSeries2>
+                  <StylesSeries3 SeriesStyleMode="Standard" ShowDataPointText="false" DataPointFontFaceName="Arial" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#1e6c0b" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" PlotOnOpposedAxis="false">
+                    <SeriesFormulas NumFormulas="0" />
+                  </StylesSeries3>
+                  <StylesSeries4 SeriesStyleMode="Standard" ShowDataPointText="false" DataPointFontFaceName="Arial" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#d84000" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" PlotOnOpposedAxis="false">
+                    <SeriesFormulas NumFormulas="0" />
+                  </StylesSeries4>
+                  <WatermarkStyles UseWatermark="None" WatermarkText="Property of Alteryx, Inc." WatermarkTextFont="Microsoft Sans Serif" WatermarkTextSize="14" WatermarkTextColor="#000000" WatermarkOpacity="60" WatermarkImage="" />
+                  <AllowMultiple value="true" />
+                  <CombinationChart value="false" />
+                  <SeriesList numSeries="4">
+                    <Series1>
+                      <Y_ValueField yValueName="ColumnValue" yValueDesc="Column">2012</Y_ValueField>
+                    </Series1>
+                    <Series2>
+                      <Y_ValueField yValueName="ColumnValue" yValueDesc="Column">2013</Y_ValueField>
+                    </Series2>
+                    <Series3>
+                      <Y_ValueField yValueName="ColumnValue" yValueDesc="Column">2014</Y_ValueField>
+                    </Series3>
+                    <Series4>
+                      <Y_ValueField yValueName="ColumnValue" yValueDesc="Column">[None]</Y_ValueField>
+                    </Series4>
+                  </SeriesList>
+                  <CurrentKnownFields>
+                    <Field name="2012" />
+                    <Field name="2013" />
+                    <Field name="2014" />
+                  </CurrentKnownFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Chart" size="1073741823" source="Report:Chart:" type="V_WString" />
+                  </RecordInfo>
+                  <SortInfo>
+                    <Field field="ROUTE" order="Asc" />
+                    <Field field="PRIMARY_WD" order="Asc" />
+                  </SortInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxReportChart.dll" EngineDllEntryPoint="AlteryxReportChartPlugin" />
+            </Node>
+            <Node ToolID="57">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1266" y="438" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\QURAIS~1\AppData\Local\Temp\Alteryx\Engine_18068_b72452e24e714108b7c8ed9c39ac7a0c_\Engine_35804_b93fe165eba14a4e9cf4d18693003814_.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name>Roads_out</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="79" y="524" width="121" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Input 3</Caption>
+              <Style TextColor="#ffffff" FillColor="#c0c0c0" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input 3</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="34">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="89" y="558" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="12">_externals\1\NOXIOUS_WEEDS_2014.shp</File>
+                  <FormatSpecificOptions>
+                    <Projection />
+                    <AllStrings>False</AllStrings>
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>NOXIOUS_WEEDS_2014.shp</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Date" />
+                    <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                    <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Int32" />
+                    <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Double" />
+                    <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                    <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="String" />
+                    <Field name="WEEDLISTCA" size="50" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="V_String" />
+                    <Field name="Shape_STLe" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="Double" />
+                    <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2014.shp" type="SpatialObj" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="80" y="392" width="121" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Input 2</Caption>
+              <Style TextColor="#ffffff" FillColor="#c0c0c0" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input 2</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="33">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="90" y="426" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="12">_externals\1\NOXIOUS_WEEDS_2013.shp</File>
+                  <FormatSpecificOptions>
+                    <Projection />
+                    <AllStrings>False</AllStrings>
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>NOXIOUS_WEEDS_2013.shp</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="COLLECTOR" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="DATE_" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Date" />
+                    <Field name="ROUTE" size="4" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                    <Field name="ROW_WIDTH" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Int32" />
+                    <Field name="PRIMARY_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="PW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="PW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="SECOND_WD" size="30" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="SW_COVER" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="SW_CONTAIN" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="COMMENTS" size="100" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="BUFF_DIST" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Double" />
+                    <Field name="DATAFILE" size="20" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="V_String" />
+                    <Field name="ZONE_" size="11" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                    <Field name="ROAD_TYPE" size="2" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                    <Field name="WEEDLISTCA" size="1" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="String" />
+                    <Field name="Shape_len" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="Double" />
+                    <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx\Challenge 9\Challenge 9\_externals\1\NOXIOUS_WEEDS_2013.shp" type="SpatialObj" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="True" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="52" Connection="Question" />
+      <Destination ToolID="49" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="62" Connection="Question" />
+      <Destination ToolID="60" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="True" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="Question" />
+      <Destination ToolID="75" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="65" Connection="Question" />
+      <Destination ToolID="74" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="74" Connection="Action" />
+      <Destination ToolID="83" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="75" Connection="Action" />
+      <Destination ToolID="82" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Road</Name>
+        <Value>036B</Value>
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Radio Button (64)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Weeds</Name>
+        <Value>Canada Thistle</Value>
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Radio Button (65)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Challenge 91 solution</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="63f59be0-03bb-4ddf-9ba0-00979dd9c140" />
+      <Telemetry>
+        <PreviousWorkflowId value="58532d1b-e056-4033-b375-e50e078a3f92" />
+        <OriginWorkflowId value="58532d1b-e056-4033-b375-e50e078a3f92" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="74" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>83/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container from Question</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="75" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>82/Disabled/@value</Destination>
+              <Mapping>Enable/Disable Container from Question</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (51)</Name>
+          <ToolId value="51" />
+          <Questions>
+            <Question>
+              <Type>RadioGroup</Type>
+              <Description>By Road</Description>
+              <Name>Radio Button (64)</Name>
+              <ToolId value="64" />
+              <Questions>
+                <Question>
+                  <Type>ListBox</Type>
+                  <Description>Road</Description>
+                  <Name>Road</Name>
+                  <ToolId value="52" />
+                  <Multiple value="False" />
+                  <Default />
+                  <Mode>DW2</Mode>
+                  <DW2_Path>Routes.yxdb</DW2_Path>
+                  <DW2_Password />
+                  <DW2_CachedCosmeticName />
+                </Question>
+              </Questions>
+              <Default value="True" />
+              <Collapsable value="True" />
+            </Question>
+            <Question>
+              <Type>RadioGroup</Type>
+              <Description>By Weed</Description>
+              <Name>Radio Button (65)</Name>
+              <ToolId value="65" />
+              <Questions>
+                <Question>
+                  <Type>ListBox</Type>
+                  <Description>Weeds</Description>
+                  <Name>Weeds</Name>
+                  <ToolId value="62" />
+                  <Multiple value="False" />
+                  <Default />
+                  <Mode>DW2</Mode>
+                  <DW2_Path>Weeds.yxdb</DW2_Path>
+                  <DW2_Password />
+                  <DW2_CachedCosmeticName />
+                </Question>
+              </Questions>
+              <Default value="False" />
+              <Collapsable value="True" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="57" Selected="True" />
+        <Tool ToolId="70" Selected="True" />
+        <Tool ToolId="47" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
