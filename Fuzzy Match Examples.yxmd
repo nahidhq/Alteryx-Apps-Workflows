@@ -1,0 +1,1168 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="477" y="69" width="687" height="663" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fuzzy Match Examples</Caption>
+          <Style TextColor="#000000" FillColor="#dfdfdf" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fuzzy Match Examples</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="500" y="523" width="295" height="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Example 3</Caption>
+              <Style TextColor="#ffffff" FillColor="#408080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Example 3</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="5">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="726" y="557" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>AccountID</RecordIdField>
+                  <MatchThreshold value="50" />
+                  <OutputScore value="False" />
+                  <OutputKey value="False" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>Primary Phone No</FieldName>
+                      <Style Name="Phone">
+                        <KeyGeneration>
+                          <KeyFunction>DigitsReverse</KeyFunction>
+                          <UseWords value="False" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="10" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>None</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>Name.yxdb</WordStats>
+                          <MatchThreshold value="0" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="False" />
+                  <SourceIdField>transaction_id</SourceIdField>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+            <Node ToolID="6">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="510" y="557" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="6" />
+                  <Fields>
+                    <Field name="AccountID" />
+                    <Field name="Primary Acct Holder" />
+                    <Field name="Primary Address" />
+                    <Field name="Primary Phone No" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>1</c>
+                      <c>Robert Paulson</c>
+                      <c>537 Paper St, Bradford DE</c>
+                      <c>288-255-0153</c>
+                    </r>
+                    <r>
+                      <c>2</c>
+                      <c>Norman Peterson</c>
+                      <c>112 Beacon St, Boston MA</c>
+                      <c>617-555-9605</c>
+                    </r>
+                    <r>
+                      <c>3</c>
+                      <c>Norm Peterson</c>
+                      <c>84 Beacon St, Boston MA</c>
+                      <c>617-227-9605</c>
+                    </r>
+                    <r>
+                      <c>4</c>
+                      <c>Carla Tortelli</c>
+                      <c>84 Beacon St, Boston MA</c>
+                      <c>617-227-9605</c>
+                    </r>
+                    <r>
+                      <c>5</c>
+                      <c>Robert Paulsen</c>
+                      <c>1537 Paper Street, Bradford Delaware</c>
+                      <c>12882551534</c>
+                    </r>
+                    <r>
+                      <c>6</c>
+                      <c>Bob Paulson</c>
+                      <c>123 Paper St, Bardford DE</c>
+                      <c>2882551534</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="824" y="524" width="307" height="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Example 4</Caption>
+              <Style TextColor="#ffffff" FillColor="#408080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Example 4</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="7">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="834" y="558" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="26" />
+                  <Fields>
+                    <Field name="transaction_id" />
+                    <Field name="trans_dt" />
+                    <Field name="acct_holder" />
+                    <Field name="amt" />
+                    <Field name="source" />
+                    <Field name="supplier_id" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>205160</c>
+                      <c>2015-03-10</c>
+                      <c>GLEN &amp; ALLENS HARDWARE CO</c>
+                      <c>12056</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205161</c>
+                      <c>2015-03-10</c>
+                      <c>BROWNSVILLE DEPT OF REVENUE</c>
+                      <c>554</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205162</c>
+                      <c>2015-03-10</c>
+                      <c>WOLFMAN CO</c>
+                      <c>300</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205163</c>
+                      <c>2015-03-11</c>
+                      <c>THE WOLFMAN CMPY</c>
+                      <c>302</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205164</c>
+                      <c>2015-03-11</c>
+                      <c>CANDLEWICK RESEARCH DEPT</c>
+                      <c>1810</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205165</c>
+                      <c>2015-03-12</c>
+                      <c>CO TEXTILE AND VARNISH</c>
+                      <c>890</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205166</c>
+                      <c>2015-03-12</c>
+                      <c>WOLFMAN CO LLC</c>
+                      <c>63</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205167</c>
+                      <c>2015-03-12</c>
+                      <c>GLEN AND ALLENS HARDWARE CMPY</c>
+                      <c>8227</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205168</c>
+                      <c>2015-03-12</c>
+                      <c>BUNDICK LUMBER LIQUIDATORS LLC</c>
+                      <c>16471</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205169</c>
+                      <c>2015-03-13</c>
+                      <c>TARLEY MAST BUILDERS INC</c>
+                      <c>2406</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205170</c>
+                      <c>2015-03-14</c>
+                      <c>BROWNSVILLE DEPARTMENT OF REVENUE</c>
+                      <c>648</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205171</c>
+                      <c>2015-03-14</c>
+                      <c>SMOKIN CHARLIES TRANSPORT CO</c>
+                      <c>4205</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205172</c>
+                      <c>2015-03-15</c>
+                      <c>BROWNSVILLE DEPARTMENT OF TRANSPORTATION</c>
+                      <c>21</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205173</c>
+                      <c>2015-03-15</c>
+                      <c>COLORADO TEXTILE AND VARNISH</c>
+                      <c>192</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205174</c>
+                      <c>2015-03-16</c>
+                      <c>COLORADO DEPT OF THE TREASURY</c>
+                      <c>500</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c>205175</c>
+                      <c>2015-03-17</c>
+                      <c>COLORADO DEPT OF THE TREASURY</c>
+                      <c>3</c>
+                      <c>transactions_table</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Brownsville Dept of Revenue</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>1</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Brownsville Dept of Transportation</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>2</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Bundick Lumber Liquidators</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>3</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Candlewick Research</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>4</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Colorado Dept of the Treasury</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>5</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Colorado Textile &amp; Varnish</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>6</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Glen &amp; Allen's Hardware</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>7</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Smokin' Charlie's Transport</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>8</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Tarley Mast Builders</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>9</c>
+                    </r>
+                    <r>
+                      <c />
+                      <c />
+                      <c>Wolfman</c>
+                      <c />
+                      <c>supplier_table</c>
+                      <c>10</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="1">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="8">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="1062" y="558" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>acct_holder</RecordIdField>
+                  <MatchThreshold value="80" />
+                  <OutputScore value="False" />
+                  <OutputKey value="False" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>acct_holder</FieldName>
+                      <Style Name="Company Name">
+                        <PreProcess name="Strip Punctuation">
+                          <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                          <Replace>(?2 :)</Replace>
+                        </PreProcess>
+                        <KeyGeneration>
+                          <KeyFunction>DblMetaphone</KeyFunction>
+                          <UseWords value="True" />
+                          <IgnoreWords>AND OF THE CO INC</IgnoreWords>
+                          <IgnoreSingleLetterWords value="True" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="4" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>JaroTFIDF</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>US Company.yxdb</WordStats>
+                          <MatchThreshold value="85" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="False" />
+                  <SourceIdField>source</SourceIdField>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+            <Node ToolID="9">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="1062" y="654" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>acct_holder</RecordIdField>
+                  <MatchThreshold value="80" />
+                  <OutputScore value="False" />
+                  <OutputKey value="False" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>acct_holder</FieldName>
+                      <Style Name="Company Name">
+                        <PreProcess name="Strip Punctuation">
+                          <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                          <Replace>(?2 :)</Replace>
+                        </PreProcess>
+                        <KeyGeneration>
+                          <KeyFunction>DblMetaphone</KeyFunction>
+                          <UseWords value="True" />
+                          <IgnoreWords>AND OF THE CO INC</IgnoreWords>
+                          <IgnoreSingleLetterWords value="True" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="4" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>JaroTFIDF</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>US Company.yxdb</WordStats>
+                          <MatchThreshold value="85" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="True" />
+                  <SourceIdField>source</SourceIdField>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="487" y="103" width="307" height="355" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Example 1</Caption>
+              <Style TextColor="#ffffff" FillColor="#408080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Example 1</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="1">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="497" y="137" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="16" />
+                  <Fields>
+                    <Field name="transaction_id" />
+                    <Field name="trans_dt" />
+                    <Field name="acct_holder" />
+                    <Field name="amt" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>001</c>
+                      <c>2015-03-10</c>
+                      <c>GLEN &amp; ALLENS HARDWARE CO</c>
+                      <c>12056</c>
+                    </r>
+                    <r>
+                      <c>002</c>
+                      <c>2015-03-10</c>
+                      <c>BROWNSVILLE DEPT OF REVENUE</c>
+                      <c>554</c>
+                    </r>
+                    <r>
+                      <c>003</c>
+                      <c>2015-03-10</c>
+                      <c>WOLFMAN CO</c>
+                      <c>300</c>
+                    </r>
+                    <r>
+                      <c>004</c>
+                      <c>2015-03-11</c>
+                      <c>THE WOLFMAN CMPY</c>
+                      <c>302</c>
+                    </r>
+                    <r>
+                      <c>005</c>
+                      <c>2015-03-11</c>
+                      <c>CANDLEWICK RESEARCH DEPT</c>
+                      <c>1810</c>
+                    </r>
+                    <r>
+                      <c>006</c>
+                      <c>2015-03-12</c>
+                      <c>CO TEXTILE AND VARNISH</c>
+                      <c>890</c>
+                    </r>
+                    <r>
+                      <c>007</c>
+                      <c>2015-03-12</c>
+                      <c>WOLFMAN CO LLC</c>
+                      <c>63</c>
+                    </r>
+                    <r>
+                      <c>008</c>
+                      <c>2015-03-12</c>
+                      <c>GLEN AND ALLENS HARDWARE CMPY</c>
+                      <c>8227</c>
+                    </r>
+                    <r>
+                      <c>009</c>
+                      <c>2015-03-12</c>
+                      <c>BUNDICK LUMBER LIQUIDATORS LLC</c>
+                      <c>16471</c>
+                    </r>
+                    <r>
+                      <c>010</c>
+                      <c>2015-03-13</c>
+                      <c>TARLEY MAST BUILDERS INC</c>
+                      <c>2406</c>
+                    </r>
+                    <r>
+                      <c>011</c>
+                      <c>2015-03-14</c>
+                      <c>BROWNSVILLE DEPARTMENT OF REVENUE</c>
+                      <c>648</c>
+                    </r>
+                    <r>
+                      <c>012</c>
+                      <c>2015-03-14</c>
+                      <c>SMOKIN CHARLIES TRANSPORT CO</c>
+                      <c>4205</c>
+                    </r>
+                    <r>
+                      <c>013</c>
+                      <c>2015-03-15</c>
+                      <c>BROWNSVILLE DEPARTMENT OF TRANSPORTATION</c>
+                      <c>21</c>
+                    </r>
+                    <r>
+                      <c>014</c>
+                      <c>2015-03-15</c>
+                      <c>COLORADO TEXTILE AND VARNISH</c>
+                      <c>192</c>
+                    </r>
+                    <r>
+                      <c>015</c>
+                      <c>2015-03-16</c>
+                      <c>COLORADO DEPT OF THE TREASURY</c>
+                      <c>500</c>
+                    </r>
+                    <r>
+                      <c>016</c>
+                      <c>2015-03-17</c>
+                      <c>COLORADO DEPT OF THE TREASURY</c>
+                      <c>3</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="1">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="2">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="726" y="281" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>transaction_id</RecordIdField>
+                  <MatchThreshold value="80" />
+                  <OutputScore value="False" />
+                  <OutputKey value="False" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>acct_holder</FieldName>
+                      <Style Name="Company Name">
+                        <PreProcess name="Strip Punctuation">
+                          <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                          <Replace>(?2 :)</Replace>
+                        </PreProcess>
+                        <KeyGeneration>
+                          <KeyFunction>DblMetaphone</KeyFunction>
+                          <UseWords value="True" />
+                          <IgnoreWords>AND OF THE CO INC</IgnoreWords>
+                          <IgnoreSingleLetterWords value="True" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="4" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>JaroTFIDF</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>US Company.yxdb</WordStats>
+                          <MatchThreshold value="85" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="False" />
+                  <SourceIdField>transaction_id</SourceIdField>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+            <Node ToolID="3">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="726" y="138" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>acct_holder</RecordIdField>
+                  <MatchThreshold value="80" />
+                  <OutputScore value="False" />
+                  <OutputKey value="False" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>acct_holder</FieldName>
+                      <Style Name="Company Name">
+                        <PreProcess name="Strip Punctuation">
+                          <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                          <Replace>(?2 :)</Replace>
+                        </PreProcess>
+                        <KeyGeneration>
+                          <KeyFunction>DblMetaphone</KeyFunction>
+                          <UseWords value="True" />
+                          <IgnoreWords>AND OF THE CO INC</IgnoreWords>
+                          <IgnoreSingleLetterWords value="True" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="4" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>JaroTFIDF</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>US Company.yxdb</WordStats>
+                          <MatchThreshold value="85" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="False" />
+                  <SourceIdField>transaction_id</SourceIdField>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+            <Node ToolID="4">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="726" y="390" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>acct_holder</RecordIdField>
+                  <MatchThreshold value="50" />
+                  <OutputScore value="True" />
+                  <OutputKey value="True" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>acct_holder</FieldName>
+                      <Style Name="Custom">
+                        <PreProcess name="Strip Punctuation">
+                          <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                          <Replace>(?2 :)</Replace>
+                        </PreProcess>
+                        <KeyGeneration>
+                          <KeyFunction>DblMetaphone</KeyFunction>
+                          <UseWords value="True" />
+                          <IgnoreWords>AND OF THE CO INC</IgnoreWords>
+                          <IgnoreSingleLetterWords value="True" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="4" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>JaroTFIDF</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>US Company.yxdb</WordStats>
+                          <NicknameFile />
+                          <NicknamePenalty value="15" />
+                          <MatchThreshold value="50" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="False" />
+                  <SourceIdField>transaction_id</SourceIdField>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="812" y="103" width="343" height="307" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Example 2</Caption>
+              <Style TextColor="#ffffff" FillColor="#408080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Example 2</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="10">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="822" y="137" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="16" />
+                  <Fields>
+                    <Field name="transaction_id" />
+                    <Field name="trans_dt" />
+                    <Field name="acct_holder" />
+                    <Field name="amt" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>205160</c>
+                      <c>2015-03-10</c>
+                      <c>GLEN &amp; ALLENS HARDWARE CO</c>
+                      <c>12056</c>
+                    </r>
+                    <r>
+                      <c>205161</c>
+                      <c>2015-03-10</c>
+                      <c>BROWNSVILLE DEPT OF REVENUE</c>
+                      <c>554</c>
+                    </r>
+                    <r>
+                      <c>205162</c>
+                      <c>2015-03-10</c>
+                      <c>WOLFMAN CO</c>
+                      <c>300</c>
+                    </r>
+                    <r>
+                      <c>205163</c>
+                      <c>2015-03-11</c>
+                      <c>THE WOLFMAN CMPY</c>
+                      <c>302</c>
+                    </r>
+                    <r>
+                      <c>205164</c>
+                      <c>2015-03-11</c>
+                      <c>CANDLEWICK RESEARCH DEPT</c>
+                      <c>1810</c>
+                    </r>
+                    <r>
+                      <c>205165</c>
+                      <c>2015-03-12</c>
+                      <c>CO TEXTILE AND VARNISH</c>
+                      <c>890</c>
+                    </r>
+                    <r>
+                      <c>205166</c>
+                      <c>2015-03-12</c>
+                      <c>WOLFMAN CO LLC</c>
+                      <c>63</c>
+                    </r>
+                    <r>
+                      <c>205167</c>
+                      <c>2015-03-12</c>
+                      <c>GLEN AND ALLENS HARDWARE CMPY</c>
+                      <c>8227</c>
+                    </r>
+                    <r>
+                      <c>205168</c>
+                      <c>2015-03-12</c>
+                      <c>BUNDICK LUMBER LIQUIDATORS LLC</c>
+                      <c>16471</c>
+                    </r>
+                    <r>
+                      <c>205169</c>
+                      <c>2015-03-13</c>
+                      <c>TARLEY MAST BUILDERS INC</c>
+                      <c>2406</c>
+                    </r>
+                    <r>
+                      <c>205170</c>
+                      <c>2015-03-14</c>
+                      <c>BROWNSVILLE DEPARTMENT OF REVENUE</c>
+                      <c>648</c>
+                    </r>
+                    <r>
+                      <c>205171</c>
+                      <c>2015-03-14</c>
+                      <c>SMOKIN CHARLIES TRANSPORT CO</c>
+                      <c>4205</c>
+                    </r>
+                    <r>
+                      <c>205172</c>
+                      <c>2015-03-15</c>
+                      <c>BROWNSVILLE DEPARTMENT OF TRANSPORTATION</c>
+                      <c>21</c>
+                    </r>
+                    <r>
+                      <c>205173</c>
+                      <c>2015-03-15</c>
+                      <c>COLORADO TEXTILE AND VARNISH</c>
+                      <c>192</c>
+                    </r>
+                    <r>
+                      <c>205174</c>
+                      <c>2015-03-16</c>
+                      <c>COLORADO DEPT OF THE TREASURY</c>
+                      <c>500</c>
+                    </r>
+                    <r>
+                      <c>205175</c>
+                      <c>2015-03-17</c>
+                      <c>COLORADO DEPT OF THE TREASURY</c>
+                      <c>3</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="1">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="11">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="1086" y="138" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="acct_holder" action="GroupBy" rename="acct_holder" />
+                    <SummarizeField field="amt" action="Sum" rename="Sum_amt" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="12">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+                <Position x="894" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <RecordIdField>acct_holder</RecordIdField>
+                  <MatchThreshold value="75" />
+                  <OutputScore value="False" />
+                  <OutputKey value="False" />
+                  <OutputUnmatched value="False" />
+                  <OutputMakeGroup value="False" />
+                  <GenerateKeys value="False" />
+                  <MatchFields>
+                    <MatchField>
+                      <FieldName>acct_holder</FieldName>
+                      <Style Name="Custom">
+                        <PreProcess name="Strip Punctuation">
+                          <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                          <Replace>(?2 :)</Replace>
+                        </PreProcess>
+                        <KeyGeneration>
+                          <KeyFunction>DblMetaphone</KeyFunction>
+                          <UseWords value="True" />
+                          <IgnoreWords>AND OF THE CO INC</IgnoreWords>
+                          <IgnoreSingleLetterWords value="True" />
+                          <IgnoreEmpty value="True" />
+                          <MaxKeyLen value="4" />
+                        </KeyGeneration>
+                        <Match>
+                          <MatchFunction>JaroTFIDF</MatchFunction>
+                          <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                          <WordStats>US Company.yxdb</WordStats>
+                          <NicknameFile />
+                          <NicknamePenalty value="15" />
+                          <MatchThreshold value="60" />
+                          <MatchWeight value="100" />
+                        </Match>
+                      </Style>
+                    </MatchField>
+                  </MatchFields>
+                  <MergeMode value="False" />
+                  <SourceIdField />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+            </Node>
+            <Node ToolID="13">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.MakeGroup.MakeGroup">
+                <Position x="966" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Key1st>acct_holder</Key1st>
+                  <Key2nd>acct_holder2</Key2nd>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMakeGroup" />
+            </Node>
+            <Node ToolID="14">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+                <Position x="1086" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FieldFind>acct_holder</FieldFind>
+                  <FieldSearch>Key</FieldSearch>
+                  <ReplaceFoundField>Group</ReplaceFoundField>
+                  <FindMode>FindWhole</FindMode>
+                  <NoCase value="False" />
+                  <MatchWholeWord value="False" />
+                  <ReplaceMode>Replace</ReplaceMode>
+                  <ReplaceMultipleFound value="True" />
+                  <ReplaceAppendFields />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+            </Node>
+            <Node ToolID="15">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="1086" y="342" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="acct_holder" action="GroupBy" rename="acct_holder" />
+                    <SummarizeField field="amt" action="Sum" rename="Sum_amt" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Fuzzy Match Examples</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c5b3c403-6641-47fb-ac5f-ee132bc9f20e" />
+      <Telemetry>
+        <PreviousWorkflowId value="51005965-61af-414c-a9cf-231fecd57a7b" />
+        <OriginWorkflowId value="9cdf4f44-ca0f-4911-8f31-b7fee3f3370e" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
