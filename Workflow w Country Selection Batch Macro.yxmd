@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Sales_Data.xlsx|||`Tabelle1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText>Sales_Data.xlsx
+Query=`Tabelle1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OrderID" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Sales_Data.xlsx|||`Tabelle1$`" type="Double" />
+            <Field name="Country" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Sales_Data.xlsx|||`Tabelle1$`" type="V_String" />
+            <Field name="OrderDate" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Sales_Data.xlsx|||`Tabelle1$`" type="Date" />
+            <Field name="Category" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Sales_Data.xlsx|||`Tabelle1$`" type="V_String" />
+            <Field name="Sales" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Sales_Data.xlsx|||`Tabelle1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Batch Value.xlsx|||`Tabelle1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Batch Value.xlsx
+Query=`Tabelle1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Country" size="255" source="File: C:\Users\Quraishi Nahid\Desktop\Alteryx New Folder 23.12.25\Batch Macro Post 23.12.2025\Batch Macro 1\Batch Value.xlsx|||`Tabelle1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="498" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy"><![CDATA[Control=Country
+Input2=Country
+]]></Value>
+          <Value name="Input.Input2"><![CDATA[OrderID=OrderID
+Country=Country
+OrderDate=OrderDate
+Category=Category
+Sales=Sales
+]]></Value>
+          <Value name="ControlParams"><![CDATA[Control Parameter (4)=Country
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>m_BatchCountrySales (7)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output8">
+          <RecordInfo>
+            <Field name="Country" size="255" source="Summarize: GroupBy - Country" type="V_String" />
+            <Field name="Sum_Sales" source="Summarize: Sum - Sales" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro=".\m_BatchCountrySales.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Control" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow w Batch Marco 1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6b0b1944-cbc5-405b-bbb8-434c5c177a4a" />
+      <Telemetry>
+        <PreviousWorkflowId value="39da7fca-c4f2-4a90-b426-3c3bbc2236a5" />
+        <OriginWorkflowId value="39da7fca-c4f2-4a90-b426-3c3bbc2236a5" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
